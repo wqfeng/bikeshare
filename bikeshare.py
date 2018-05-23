@@ -61,7 +61,7 @@ def load_data(city, month, day):
 
     # filter by month
     if month != 'all':
-        df = df[df['month'] == (MONTHS.index(month) + 1)]
+        df = df[df['month'] == MONTHS.index(month)]
 
     # filter by day
     if day != 'all':
